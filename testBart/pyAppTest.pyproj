@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5e5c33a8-8e3f-48de-b51e-5a3235aea569}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>test_stl.py</StartupFile>
+    <SearchPath>..\testBart;..\testBart;..\build\tests</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <TestFramework>Pytest</TestFramework>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="CMakeFiles\3.25.1\VCTargetsPath.txt" />
+    <Content Include="tests\pytest.ini" />
+    <Content Include="tests\sosize-pybind11_tests.cp310-win_amd64.pyd.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CMakeFiles" />
+    <Folder Include="CMakeFiles\3.25.1" />
+    <Folder Include="tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="test_stl.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
